@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>SkyNet Music Streaming</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+
+<body>
+<div class="container">
+    <div class="page-header">
+      <h1>SkyNet Music Streaming</h1>
+       <img src="{{ url_for('static', filename='img/cassette.png') }}" alt="Skynet cassette"> 
+    </div>
+    {% block content %}
+ 
+    {% endblock %}
+    <hr/>
+</div>
+</body>
+</html>
